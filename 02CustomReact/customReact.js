@@ -23,7 +23,8 @@ const reactElement = {
     type: 'a',
     props: {
         href: 'https://www.google.co.in/',
-        target: '_blank'
+        target: '_blank',
+        style: 'text-decoration:none; color:aliceblue;'
     },
     children: 'Click me to visit Google'
 }
