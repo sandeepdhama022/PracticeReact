@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full font-black-400 bg-black-500 m-10 text-center'>
+      <div className='flex items-center text-center font-bold border-4 mt-4 w-80'>
         <h1>Sandeep Dhama</h1>
       </div>
     </>
