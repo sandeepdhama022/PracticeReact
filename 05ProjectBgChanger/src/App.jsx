@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      <div className='w-full font-black-400 bg-white m-10 text-center'>
-        <h1 className='font-black-400'>Sandeep Dhama</h1>
+      <div className='w-full font-black-400 bg-black-500 m-10 text-center'>
+        <h1>Sandeep Dhama</h1>
       </div>
     </>
   )
