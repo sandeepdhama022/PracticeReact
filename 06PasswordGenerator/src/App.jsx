@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
-      <h1>Sandeep Dhama</h1>
+      <div className='w-40 text-center'>
+        <input type="text" name="password" className='p-2' />
+      </div>
     </>
   )
 }
