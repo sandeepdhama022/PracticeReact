@@ -16,13 +16,12 @@ function App() {
     str += '!@#$_+-*/~'
   }
 
-  const randomNum = Math.floor(Math.randomNum()*100)+1
+  for (let i = 1; i <= length; i++) {
+    let charNum = Math.floor(Math.randomNum() * str.length) + 1
+    pass += str.charAt[i]
+  }
 
-  for (let i = 1; i <= array.length; index++) {
-    const element = array[i];
-1  i
-
-=  return (
+  return (
     <>
       <div className='w-full max-w-2xl mx-auto my-10 p-5 rounded-xl bg-gray-800 text-white text-center'>
         <h1 className='text-4xl text-white'>Password Generator</h1>
