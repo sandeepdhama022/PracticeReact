@@ -16,15 +16,16 @@ function App() {
     if (charAllowed) {
       str += '!@#$_+-*/~'
     }
-
+    console.log(numAllowed);
+    console.log(charAllowed);
     for (let i = 1; i <= length; i++) {
       let charNum = Math.floor(Math.random() * str.length + 1)
-      pass += str.charAt[charNum]
+      pass += str.charAt(charNum)
     }
     setPassword(pass)
-  }, [length, numAllowed, charAllowed])
+  }, [length, numAllowed, charAllowed, setPassword])
 
-  useEffect(()=>{
+  useEffect(() => {
     passwordGenerator()
   },[length, numAllowed, charAllowed, passwordGenerator])
 
