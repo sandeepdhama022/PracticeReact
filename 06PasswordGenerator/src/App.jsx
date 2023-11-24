@@ -6,6 +6,7 @@ function App() {
   const [password, setPassword] = useState("")
   const [numAllowed, setNumAllowed] = useState(false)
   const [charAllowed, setCharAllowed] = useState(false)
+
   const passwordGenerator = useCallback(() => {
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -39,9 +40,11 @@ function App() {
         min={'2'} max={'50'}
         onChange={(e)=>{setLength(e.target.value)}} />
         <label htmlFor="length" className='mx-2'>Length ({length})</label>
-        <input type="checkbox" name="num" id="num" className='mx-2' />
+        <input type="checkbox" name="num" id="num" className='mx-2'
+        onChange={()=>{setNumAllowed((prev) => !prev)}}/>
         <label htmlFor="num">Numbers</label>
-        <input type="checkbox" name="char" id="char" className='mx-2' />
+        <input type="checkbox" name="char" id="char" className='mx-2'
+        onChange={()=>{setCharAllowed((prev) => !prev)}}/>
         <label htmlFor="char">Characters</label>
       </div>
     </>
